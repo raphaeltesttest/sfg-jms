@@ -20,5 +20,8 @@ public class HelloMessageListener {
         System.out.println("I got a Message!!!!!");
 
         System.out.println(helloWorldMessage);
+
+//        //msg will get re-queued/ re-delivered
+//        throw new RuntimeException("foo");
     }
 }
