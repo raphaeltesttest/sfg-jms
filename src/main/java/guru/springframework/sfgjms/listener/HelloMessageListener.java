@@ -44,8 +44,8 @@ public class HelloMessageListener {
                 .build();
 
 //        example to use Spring Message type
-         jmsTemplate.convertAndSend((Destination) springMessage.getHeaders().get("jms_replyTo"), "got it!");
+//         jmsTemplate.convertAndSend((Destination) springMessage.getHeaders().get("jms_replyTo"), "got it!");
 
-//        jmsTemplate.convertAndSend(message.getJMSReplyTo(), payloadMsg);
+        jmsTemplate.convertAndSend(message.getJMSReplyTo(), payloadMsg);
     }
 }
